@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Véhicules | Marketplace</title>
+  <!-- link style -->
+  <!-- <link rel="stylesheet" href="../assets/css/custom.css"> -->
+  <link rel="stylesheet" href="../../assets/css/cuxtom.css">
+  <link rel="stylesheet" href="../../assets/css/prod-images.css">
+  <link rel="stylesheet" href="../../assets/css/categories-filter.css">
+  <link rel="stylesheet" href="../../assets/css/cuxtom-vehicule.css">
+  <!-- link framework -->
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <link rel="icon" href="../../assets/images/Koiso2.png">
+  <link rel="stylesheet" href="../../assets/lib/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="../../assets/lib/et-line-font/et-line-font.css">
+  <link rel="stylesheet" href="../../assets/lib/icons-1.8.1/font/bootstrap-icons.css" />
+</head>
+
+<body class="bg-mlight">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm">
+    <a class="navbar-brand" href="../acceuil.html">
+      KOISO Marketplace
+    </a>
+    <form class="pull-xs-right">
+      <div class="search">
+        <input type="text" class="form-control" maxlength="64" placeholder="Search" />
+        <button type="submit" class="btn btn-search btn-danger">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../acceuil.html" title="Tout parcourir"><i class="bi bi-shop"></i><span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="../notification.html" title="Notification"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../boitedereception.html" title="Boîte de Réception"><i
+                class="bi bi-inbox-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../mes_achats.html" title="Mes achats"><i class="bi bi-basket-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../mes_ventes.html" title="Mes ventes"><i class="bi bi-tag-fill"></i></a>
+          </li>
+        </ul>
+        <ul class="d-block m-auto">
+          <li class="bloc-profil" title="Profil">
+            <a href="../mon_compte.html">
+              <img src="../../assets/images/profil-pic-crop.png" alt="profil-pic" class="img-fluid img-circled">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main role="main">
+    <div class="container-fluid">
+      <div class="row">
+        <!--Start Sidebar Menu -->
+        <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block shadow-sm bg-light sidebar collapse">
+          <!-- Sidebar Sticky -->
+          <div class="sidebar-sticky pt-1">
+            <!-- Sidebar Nav -->
+            <ul class="nav flex-column">
+              <!-- Nav Item -->
+              <li class="nav-item mt-4">
+                <!-- Sidebar Head -->
+                <span class="h4 " data-feather="home">
+                  <!-- Title -->
+                  <span class="mr-5 marche">Marché</span>
+                  <!-- Button Settings -->
+                  <i class="bi bi-gear"></i>
+                </span>
+              </li>
+              <!-- Nav Item -->
+              <li class="nav-item mt-2">
+                <!-- form -->
+                <form class="pull you_search">
+                  <!-- Span Search -->
+                  <span class="prod-search">
+                    <!-- Search Input -->
+                    <input type="search" class="form-control" placeholder="Rechercher..." />
+                  </span>
+                </form>
+              </li>
+            </ul>
+            <hr>
+            <!-- Sidebar Nav -->
+            <!-- Title -->
+            <p class="sidebar-heading d-flex">Catégories</p>
+            <!-- Nav Menu -->
+            <ul class="nav flex-column mb-2">
+              <!-- Nav Item -->
+              <li class="nav-item menu">
+                <!--   -->
+                <!-- NavLink Maison -->
+                <a class="nav-link " href="../maisons/maison.html">
+                  <span data-feather="file-text">
+                    <i class="fa fa-home p-1"><span class="bg-none"><b class="small bg-none"> Maisons</b></span></i>
+                  </span>
+                </a>
+              </li>
+              <!-- Nav Item -->
+              <li class="nav-item menu activeted">
+                <!-- Nav Link Véhicules      -->
+                <a class="nav-link" href="vehicules.html">
+                  <span data-feather="file-text">
+                    <i class="fa fa-truck p-1"><span class="bg-none"><b class="small bg-none"> Véhicules</b></span></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- end -->
+        <!-- Main Bloc -->
+        <div class="col-md-6 col-lg-9 pt-4">
+          <!-- Bloc A la une -->
+          <div class="container main-bloc bg-light shadow-sm rounded">
+            <div class="row">
+              <!-- Bloc Title -->
+              <div class="col-md-12 col-lg-12 border-bottom ">
+                <p class="ml-2 ls mt-1 mb-1"><b>Arakaza Béni Trésor</b>
+                  <span class="text-muted"> à mis cela en vente</span>
+                </p>
+              </div>
+              <!-- Bloc Slider -->
+              <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 h-auto bg-light">
+                <!-- carousel -->
+                <div class="container-imga album bg-light" style="width: 100%; height: auto; ">
+                  <div class="viewer">
+                    <!-- Full-width images with number text -->
+                    <!-- Slide One -->
+                    <div class="mySlides">
+                      <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i class="bi bi-image"></i>
+                      </div>
+                      <img src="../../assets/images/photo-vehicules/Vue de face (2).jpg" style="width:100%">
+                    </div>
+                    <!-- Slide Two -->
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 6 <i class="bi bi-image"></i></div>
+                      <img src="../../assets/images/photo-vehicules/Vue de cote.jpg" style="width:100%">
+                    </div>
+                    <!-- Slide Three -->
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 6 <i class="bi bi-image"></i></div>
+                      <img src="../../assets/images/photo-vehicules/Vue de derriere.jpg" style="width:100%">
+                    </div>
+                    <!-- Slide Four -->
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 6 <i class="bi bi-image"></i></div>
+                      <img src="../../assets/images/photo-vehicules/Vue de face.jpg" style="width:100%">
+                    </div>
+                    <!-- Slide Five -->
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 6 <i class="bi bi-image"></i></div>
+                      <img src="../../assets/images/photo-vehicules/Vue de face (2).jpg" style="width:100%">
+                    </div>
+                    <!-- Slide Six -->
+                    <div class="mySlides">
+                      <div class="numbertext">6 / 6 <i class="bi bi-image"></i></div>
+                      <img src="../../assets/images/photo-vehicules/Vue de derriere.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Image text -->
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                  </div>
+                  <!-- Thumbnail images -->
+                  <div class="row" style="width: 100%; padding: 0; margin: 0;">
+                    <div class="column">
+                      <img class="demo cursor img-fluid" src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                        style="width:100%" onclick="currentSlide(1)" alt="Vu d'enfance">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="../../assets/images/photo-vehicules/Vue de cote.jpg"
+                        style="width:100%" onclick="currentSlide(2)" alt="Vu de coté droit">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="../../assets/images/photo-vehicules/Vue de derriere.jpg"
+                        style="width:100%" onclick="currentSlide(3)" alt="Vu de coté gauche">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="../../assets/images/photo-vehicules/Vue de face.jpg"
+                        style="width:100%" onclick="currentSlide(4)" alt="Intérieur">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                        style="width:100%" onclick="currentSlide(5)" alt="Intérieur - Cuisine">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="../../assets/images/photo-vehicules/Vue de derriere.jpg"
+                        style="width:100%" onclick="currentSlide(6)" alt="Derrier">
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
+              <!-- Bloc Details -->
+              <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 p-2 border-left">
+                <div class="container-fluid product-info">
+                  <p class="border-bottom">
+                    <span class="h3">Voiture à vendre (Toyota) </span><br />
+                    <span class="h6">13.500.000 Fbu</span><br />
+                    <span class="text-muted small">Publié il y a 23 heures dans Bujumbura |
+                      <i class="bi bi-file-earmark"></i> Ref: <b>8200123</b>
+                    </span>
+                  </p>
+                  <p class="rw">
+                    <button class="btn btn-dark btn-sm ">
+                      <i class="bi bi-envelope mr-2"></i>
+                      Envoyer un message
+                    </button>
+                    <button class="btn btn-sm btn-white border-dark plus" data-target="#myModal" data-toggle="modal">
+                      <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                  </p>
+                  <!-- Modal -->
+                  <div class="modal modal-info mt-3 pb-5" id="myModal">
+                    <div class="modal-container d-block m-auto">
+                      <!-- partie  profil -->
+                      <div class="container-fluid">
+                        <!-- cover -->
+                        <div class="m-cover">
+                          <div class="m-image-cover">
+                            <img src="../../assets/images/profil-pic-crop.png"
+                              class="img-fluid img-profil d-block m-auto" alt="profil-pic">
+                          </div>
+                        </div>
+                        <!-- profil image -->
+                        <div class="profil-name bg-light pt-5 pb-3 pl-3 pr-3">
+                          <p class="nam h1">Arakaza Béni Trésor</p>
+                          <div class="other-btn mt-2">
+                            <button class="btn btn-sm btn-primary ml-3"><i
+                                class="bi bi-plus-square mr-2"></i>Suivre</button>
+                            <button class="btn btn-sm ml-3">Voir le profil</button>
+                            <button class="btn btn-sm ml-3">Signaler</button>
+                          </div>
+                        </div>
+                        <div class="bg-light border-top small pt-2 pl-3 pb-2">
+                          <b class="text-muted mb-1">À propos</b><br>
+                          <span class="ml-2">Habite à <b class="lieu">Bujumbura</b>,<b class="quartier">
+                              Ngagara</b></span>.
+                        </div>
+                      </div>
+                      <!-- partie annonce -->
+                      <div class="container-fluid">
+                        <div class="annonces bg-light border-top p-1">
+                          <div class="block-annonces border-bottom pr-2 pl-2">
+                            <span class="small"><b>Annonces - 10 +</b></span>
+                            <div class="row mt-3">
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#">
+                                    <img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison">
+                                  </a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md- col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md- col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn btn-block btn-sm btn-more mt-3 mb-3"><b>Voir plus</b></button>
+                          </div>
+
+                          <div class="block-annonces border-bottom pr-2 pl-2">
+                            <span class="small"><b>Annonces - 10 +</b></span>
+                            <div class="row mt-3">
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md- col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md- col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                                <div class="article-publie">
+                                  <a href="#"><img src="../../assets/images/photo-vehicules/Vue de face (2).jpg"
+                                      style="width:100%; height:100%;" class="img-fluid rounded" alt="Photo Maison"></a>
+                                  <div class="description-arcticle p-2">
+                                    <span class="small">
+                                      <b class="price">18 123 000 Fbu</b><br><span class="detail-article">Toyota
+                                        AXIO, Blanche </span><br><span
+                                        class="localisation small">Bujumbura</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn btn-block btn-sm btn-more mt-3 mb-3"><b>Voir plus</b></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end -->
+                  <p class="rw border-top pt-2">
+                    <b>Details</b><br />
+                    <span>
+                      <p>
+                        Marque: Toyota<br>
+                        Model: AXIO <br>
+                        couleur: Blanche <br>
+                      </p>
+                    </span>
+                  </p>
+                  <p class="border-top pt-3 mb-3">
+                    <b>Informations sur le propriètaire</b><br />
+                    <span>
+                      <span class="text-muted">Habite:</span><span class="city"> à Bujumbura</span> <br />
+                      <span class="text-muted">Tél:</span> 68271963<br />
+                      <span class="text-muted">Whatsapp:</span> 68271963<br />
+                      <!-- <a class="plus_d_info" href="#">plus d'info</a> -->
+                    </span>
+                  </p>
+                  <div class="recommandation">
+                    <button class="btn btn-primary btn-sm">
+                      <i class="bi bi-folder"></i>
+                      <p> Recevoir le dossier<br> complet</p>
+                    </button>
+                    <button class="btn btn-primary btn-sm">
+                      <i class="bi bi-telephone-inbound"></i>
+                      <p>Etre appelé au plus<br> vite</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Bloc Acheter par catégorie -->
+          <div class="container mt-3 pb-2 pt-2 bg-light shadow-sm rounded">
+            <h5 class="text-dark mb-2 ml-2">Voir par catégorie</h5>
+            <div id="myBtnContainer" class=" ml-3">
+              <button class="btnx activa" onclick="filterSelection('tous')"> Voir
+                Tous</button>
+              <button class="btnx" onclick="filterSelection('voitures')">Voitures</button>
+              <button class="btnx" onclick="filterSelection('voitureSport')">Voitures de Sport</button>
+              <button class="btnx" onclick="filterSelection('camions')">
+                Camions</button>
+              <button class="btnx" onclick="filterSelection('caravanes')">
+                Caravanes</button>
+            </div>
+            <!-- catégorie -->
+            <div class="row mb-3">
+              <!-- Row 1 -->
+              <div class="filterArticle voitures col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                <div class="box">
+                  <div class="image-product">
+                    <div class="carousel slider" id="slider1" data-ride="carousel">
+                      <div class="carousel-inner " role="listbox">
+                        <div class="carousel-item active">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de face.jpg" class="d-block img-fluid"
+                            alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote.jpg" class="d-block img-fluid"
+                            alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere.jpg" class="d-block img-fluid"
+                            alt="thrid Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote-db.jpg" class="d-block img-fluid"
+                            alt="Fourth Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Fith Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Sixth Slide">
+                        </div>
+                      </div>
+                      <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a href="#slider1" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="pl-2">
+                      <span class="small">
+                        <b class="price">18 123 000 Fbu</b><br><span class=" detail-article">Toyota
+                          AXIO, Blanche </span><br><span class="localisation">Bujumbura</span></span>
+                      <a href="vehicules.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="filterArticle voitureSport col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                <div class="box">
+                  <div class="image-product">
+                    <div class="carousel slider" id="slider2" data-ride="carousel">
+                      <div class="carousel-inner " role="listbox">
+                        <div class="carousel-item active">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de face.jpg" class="d-block img-fluid"
+                            alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote.jpg" class="d-block img-fluid"
+                            alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere.jpg" class="d-block img-fluid"
+                            alt="thrid Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote-db.jpg" class="d-block img-fluid"
+                            alt="Fourth Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Fith Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Sixth Slide">
+                        </div>
+                      </div>
+                      <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a href="#slider2" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="pl-2">
+                      <span class="small">
+                        <b class="price">18 123 000 Fbu</b><br><span class=" detail-article">Toyota
+                          AXIO, Blanche </span><br><span class="localisation">Bujumbura</span></span>
+                      <a href="vehicules.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="filterArticle camions col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                <div class="box">
+                  <div class="image-product">
+                    <div class="carousel slider" id="slider3" data-ride="carousel">
+                      <div class="carousel-inner " role="listbox">
+                        <div class="carousel-item active">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de face.jpg" class="d-block img-fluid"
+                            alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote.jpg" class="d-block img-fluid"
+                            alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere.jpg" class="d-block img-fluid"
+                            alt="thrid Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote-db.jpg" class="d-block img-fluid"
+                            alt="Fourth Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Fith Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Sixth Slide">
+                        </div>
+                      </div>
+                      <a href="#slider3" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a href="#slider3" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="pl-2">
+                      <span class="small">
+                        <b class="price">18 123 000 Fbu</b><br><span class=" detail-article">Toyota
+                          AXIO, Blanche </span><br><span class="localisation">Bujumbura</span></span>
+                      <a href="vehicules.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="filterArticle caravanes col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                <div class="box">
+                  <div class="image-product">
+                    <div class="carousel slider" id="slider4" data-ride="carousel">
+                      <div class="carousel-inner " role="listbox">
+                        <div class="carousel-item active">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de face.jpg" class="d-block img-fluid"
+                            alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote.jpg" class="d-block img-fluid"
+                            alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere.jpg" class="d-block img-fluid"
+                            alt="thrid Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote-db.jpg" class="d-block img-fluid"
+                            alt="Fourth Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Fith Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Sixth Slide">
+                        </div>
+                      </div>
+                      <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a href="#slider4" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="pl-2">
+                      <span class="small">
+                        <b class="price">18 123 000 Fbu</b><br><span class=" detail-article">Toyota
+                          AXIO, Blanche </span><br><span class="localisation">Bujumbura</span></span>
+                      <a href="vehicules.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Row 2 -->
+              <div class="filterArticle voitures col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                <div class="box">
+                  <div class="image-product">
+                    <div class="carousel slider" id="slider5" data-ride="carousel">
+                      <div class="carousel-inner " role="listbox">
+                        <div class="carousel-item active">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de face.jpg" class="d-block img-fluid"
+                            alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote.jpg" class="d-block img-fluid"
+                            alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere.jpg" class="d-block img-fluid"
+                            alt="thrid Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote-db.jpg" class="d-block img-fluid"
+                            alt="Fourth Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Fith Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Sixth Slide">
+                        </div>
+                      </div>
+                      <a href="#slider5" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a href="#slider5" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="pl-2">
+                      <span class="small">
+                        <b class="price">18 123 000 Fbu</b><br><span class=" detail-article">Toyota
+                          AXIO, Blanche </span><br><span class="localisation">Bujumbura</span></span>
+                      <a href="vehicules.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="filterArticle voitureSport col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                <div class="box">
+                  <div class="image-product">
+                    <div class="carousel slider" id="slider6" data-ride="carousel">
+                      <div class="carousel-inner " role="listbox">
+                        <div class="carousel-item active">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de face.jpg" class="d-block img-fluid"
+                            alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote.jpg" class="d-block img-fluid"
+                            alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere.jpg" class="d-block img-fluid"
+                            alt="thrid Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote-db.jpg" class="d-block img-fluid"
+                            alt="Fourth Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Fith Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Sixth Slide">
+                        </div>
+                      </div>
+                      <a href="#slider6" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a href="#slider6" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="pl-2">
+                      <span class="small">
+                        <b class="price">18 123 000 Fbu</b><br><span class=" detail-article">Toyota
+                          AXIO, Blanche </span><br><span class="localisation">Bujumbura</span></span>
+                      <a href="vehicules.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="filterArticle camions col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                <div class="box">
+                  <div class="image-product">
+                    <div class="carousel slider" id="slider7" data-ride="carousel">
+                      <div class="carousel-inner " role="listbox">
+                        <div class="carousel-item active">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de face.jpg" class="d-block img-fluid"
+                            alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote.jpg" class="d-block img-fluid"
+                            alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere.jpg" class="d-block img-fluid"
+                            alt="thrid Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote-db.jpg" class="d-block img-fluid"
+                            alt="Fourth Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Fith Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Sixth Slide">
+                        </div>
+                      </div>
+                      <a href="#slider7" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a href="#slider7" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="pl-2">
+                      <span class="small">
+                        <b class="price">18 123 000 Fbu</b><br><span class=" detail-article">Toyota
+                          AXIO, Blanche </span><br><span class="localisation">Bujumbura</span></span>
+                      <a href="vehicules.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="filterArticle caravanes col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                <div class="box">
+                  <div class="image-product">
+                    <div class="carousel slider" id="slider8" data-ride="carousel">
+                      <div class="carousel-inner " role="listbox">
+                        <div class="carousel-item active">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de face.jpg" class="d-block img-fluid"
+                            alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote.jpg" class="d-block img-fluid"
+                            alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere.jpg" class="d-block img-fluid"
+                            alt="thrid Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de cote-db.jpg" class="d-block img-fluid"
+                            alt="Fourth Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Fith Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                              class="bi bi-image"></i></div>
+                          <img style="width:100%; height:100%;"
+                            src="../../assets/images/photo-vehicules/Vue de derriere-db.jpg" class="d-block img-fluid"
+                            alt="Sixth Slide">
+                        </div>
+                      </div>
+                      <a href="#slider8" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a href="#slider8" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p class="pl-2">
+                      <span class="small">
+                        <b class="price">18 123 000 Fbu</b><br><span class=" detail-article">Toyota
+                          AXIO, Blanche </span><br><span class="localisation">Bujumbura</span></span>
+                      <a href="vehicules.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="achats_par_categorie-vt.html" class="btn btn-block btn-sm btn-primary mb-3">Voir +</a>
+          </div>
+          <!-- end -->
+          <div class="container mt-3 p-3 mb-3 bg-light shadow-sm rounded">
+          </div>
+        </div>
+        <!-- end Main bloc -->
+      </div>
+    </div>
+  </main>
+</body>
+<!-- framework files -->
+<script src="../../assets/js/jquery.slim.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<!-- script file -->
+<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/album.js"></script>
+<script src="../../assets/js/categories-filter.js"></script>
+
+</html>

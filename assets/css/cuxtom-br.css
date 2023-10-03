@@ -1,0 +1,21 @@
+.menu-br .nav-link{
+   font-weight: 500;
+} 
+.error{
+   margin: auto;
+}
+
+/* block for new estate */
+.new-estate-buy a{
+   text-decoration: none;
+   color: inherit;
+   transition: all .2s ease;
+}
+.new-estate-buy a:hover{
+   text-decoration: none;
+   color: #000;
+   background-color: #f1f1f1;
+}
+.img-new-estate{
+   width: 13%;
+}

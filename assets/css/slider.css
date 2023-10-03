@@ -1,0 +1,36 @@
+/* carousel */
+.partner {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: auto;
+    margin: 5px;
+    display: block;
+    transition: all ease .8s;
+}
+
+.partner:hover {
+    transform: scale(1.01);
+}
+
+.partner .partner-img {
+    width: 55%;
+    display: block;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.carousel .carousel-indicators li {
+    background: #007bff;
+}
+
+@media (max-width:768px) {
+    .partner .partner-img {
+        width: 35%;
+        display: block;
+        margin: auto;
+        border-radius: 100%;
+    }
+}

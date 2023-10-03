@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boîte de Réception | Marketplace</title>
+  <!-- link style -->
+  <!-- <link rel="stylesheet" href="../assets/css/custom.css"> -->
+  <link rel="stylesheet" href="../assets/css/cuxtom.css">
+  <link rel="stylesheet" href="../assets/css/cuxtom-br.css">
+  <!-- link framework  -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="icon" href="../assets/images/Koiso2.png">
+  <link rel="stylesheet" href="../assets/lib/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/lib/et-line-font/et-line-font.css">
+  <link rel="stylesheet" href="../assets/lib/icons-1.8.1/font/bootstrap-icons.css" />
+</head>
+
+<body class="bg-mlight">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm">
+    <a class="navbar-brand" href="acceuil.html">KOISO Marketplace</a>
+    <form class="pull-xs-right">
+      <div class="search">
+        <input type="text" class="form-control" maxlength="64" placeholder="Search" />
+        <button type="submit" class="btn btn-search btn-danger">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="acceuil.html" title="Tout parcourir"><i class="bi bi-shop"></i><span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="notification.html" title="Notification"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li class="nav-item activex">
+            <a class="nav-link" href="boitedereception.html" title="Boîte de Réception"><i
+                class="bi bi-inbox-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mes_achats.html" title="Mes achats"><i class="bi bi-basket-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mes_ventes.html" title="Mes ventes"><i class="bi bi-tag-fill"></i></a>
+          </li>
+        </ul>
+        <ul class="d-block m-auto">
+          <li class="bloc-profil" title="Profil">
+            <a href="mon_compte.html">
+              <img src="../assets/images/profil-pic-crop.png" alt="profil-pic" class="img-fluid img-circled">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main  -->
+  <main role="main">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- sidebar Menu -->
+        <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block shadow-sm bg-light sidebar collapse">
+          <div class="sidebar-sticky pt-1">
+            <ul class="nav flex-column">
+              <li class="nav-item mt-4">
+                <span class="h4 " data-feather="home">
+                  <span class="mr-5 marche">Marché</span>
+                  <i class="bi bi-gear"></i>
+                </span>
+              </li>
+              <li class="nav-item mt-2">
+                <form class="pull you_search">
+                  <span class="prod-search">
+                    <input type="search" class="form-control" placeholder="Rechercher..." />
+                  </span>
+                </form>
+              </li>
+            </ul>
+            <hr>
+            <p class="sidebar-heading d-flex">Catégories</p>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item menu ">
+                <!--   activeted    -->
+                <a class="nav-link " href="../fr/maisons/maison.html">
+                  <span data-feather="file-text">
+                    <i class="fa fa-home p-1"><span class="bg-none"><b class="small bg-none"> Maisons</b></span></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item menu ">
+                <a class="nav-link" href="../fr/vehicules/vehicules.html">
+                  <span data-feather="file-text">
+                    <i class="fa fa-truck p-0"><span class="bg-none"><b class="small bg-none"> Véhicules</b></span></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Content -->
+        <div class="col-md-6 col-lg-9 pt-5">
+          <div class="container mt-5">
+            <div class="col-md-8 offset-md-2 rounded">
+              <!-- nav menu  -->
+              <div class="container bg-light pt-1 shadow-sm-top rounded-top">
+                <div class="row border-bottom menu-br">
+                  <ul class="nav nav-pills nav-fill bg-succes pl-3" role="tablist">
+                    <li class="nav-item m1">
+                      <a href="#achats" class="nav-link p-2 active" data-toggle="tab" role="tab">Achats</a>
+                    </li>
+                    <li class="nav-item m1">
+                      <a href="#envente" class="nav-link p-2" data-toggle="tab" role="tab">En vente</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Tab Content -->
+              <div class="container-fluid p-0 tab-content ">
+                <!-- tabpanel 1 -->
+                <div class="container tab-pane bg-light active mt-3 pt-2 pb-2 shadow-sm rounded" id="achats"
+                  role="tabpanel">
+                  <div class="row mt-2 mb-1 ml-2 mr-2 new-estate-buy">
+                    <a href="#" class="row m-1 p-1">
+                      <img src="../assets/images/photo1.jpg" alt="img-nouveau" class="img-fluid rounded img-new-estate">
+                      <span class="ml-2 mt-2 small"><b class="">Arakaza Béni.T - Maison moderne à un étage</b><br>
+                        <span class="text-muted">Contact:<span class="text-dark"> 68271963</span></span><br>
+                        <span class="text-muted small">il y a </span><span class="text-primary hour-bold">4 h</span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="row mt-2 mb-1 ml-2 mr-2 new-estate-buy">
+                    <a href="#" class="row m-1 p-1">
+                      <img src="../assets/images/photo1.jpg" alt="img-nouveau" class="img-fluid rounded img-new-estate">
+                      <span class="ml-2 mt-2 small"><b class="">Arakaza Béni.T - Maison moderne à un étage</b><br>
+                        <span class="text-muted">Contact:<span class="text-dark"> 68271963</span></span><br>
+                        <span class="text-muted small">il y a </span><span class="text-primary hour-bold">6 h</span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- tabpanel 2 -->
+                <div class="container tab-pane" id="envente" role="tabpanel">
+                  <div class="row bg-light p-3 border-bottom shadow-sm">
+                    <span class="text-muted small mt-1 ">Voir les discussions</span>
+                    <button class="btn btn-sm btn-light border ml-2">Discussions individuelles</button>
+                  </div>
+                  <div class="row bg-light p-3 rounded-bottom shadow-sm d-block">
+                    <p class="text-muted small">Filtrer par l'étiquette</p>
+                    <div class="row p-3">
+                      <button class="btn btn-primary p-1 ml-2 btn-sm">Tous</button>
+                      <button class="btn btn-primary p-1 ml-2 btn-sm">En attente de paiement</button>
+                      <button class="btn btn-primary p-1 ml-2 btn-sm">Payé</button>
+                      <button class="btn btn-primary p-1 ml-2 btn-sm">Terminer</button>
+                    </div>
+                  </div>
+                  <div class="row bg-light mt-3 rounded shadow-sm">
+                    <div class="error d-block m-auto p-3">
+                      <i class="bi bi-send-fill pl-5 mb-3 "></i>
+                      <p class="text-muted">Aucune Discussion</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<!-- framework files  -->
+<script src="../assets/js/jquery.slim.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<!-- script file -->
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/album.js"></script>
+
+</html>

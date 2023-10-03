@@ -1,0 +1,41 @@
+.collapxe-tb{
+   margin-top: -25px;
+}
+.bi-chevron-down{
+   float:right;
+}
+.radio{
+   display:inline-flex;
+}
+.checkbox{
+   display:inline-flex;
+}
+
+.collapxe-tb label{
+   font-size:small;
+   font-weight:bold;
+   width: 88%;
+   
+}
+.form-price{
+   display: inline-block;
+   flex-wrap: wrap;
+}
+.separator{padding: 4%;}
+.min-price, .max-price{
+   width: 42%;
+   border:1px solid #ccc;
+   /* Responsive item card w/Flex  */
+   flex: 1 1 100px;
+}
+.form-space{
+   display: inline-block;
+   flex-wrap: wrap;
+}
+.separator{padding: 4%;}
+.min-space, .max-space{
+   width: 42%;
+   border:1px solid #ccc;
+   /* Responsive item card w/Flex  */
+   flex: 1 1 100px;
+}

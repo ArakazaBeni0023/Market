@@ -1,0 +1,48 @@
+.profil-vente{
+   height:35px;
+   width: auto;
+}
+.profil-vente img{
+   height:100%;
+   width: auto;
+   border-radius: 50px;
+}
+.effacer{
+   float: right;
+}
+
+.style-scope{
+   font-size: 10px;   
+   width: 5px;
+   height: auto;
+}
+.form-label-group .custom-select{
+   border:0;
+   box-shadow: 0;
+}
+.block-annonces{
+   position: absolute;   
+   top:40%;
+   left:50%;
+   transform: translate(-50%, -50%);
+}
+/* Collapse */
+.collapxe-tb{
+   margin-top: -25px;
+}
+.bi-chevron-down{
+   float:right;
+}
+.radio{
+   display:inline-flex;
+}
+.checkbox{
+   display:inline-flex;
+}
+
+.collapxe-tb label{
+   font-size:small;
+   font-weight:bold;
+   width: 90%;
+   
+}

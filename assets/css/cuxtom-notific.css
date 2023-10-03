@@ -1,0 +1,24 @@
+
+.row-notif .title-new{
+   font-size: small;
+}
+.row-notif .img-new-notif{
+   width: 10%;
+}
+.row-notif a{
+   text-decoration: none;
+   color: inherit;
+}
+.row-notif a:hover{
+   height: auto;
+   text-decoration: none;
+}
+.row-notif .shado-sm{
+   box-shadow: 0 6px 22px rgb(230, 230, 230);
+}
+.notif-bolder{
+   font-weight: 500;
+}
+.hour-bold{
+   font-weight: 600;
+}

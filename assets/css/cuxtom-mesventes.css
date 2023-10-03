@@ -1,0 +1,37 @@
+
+.profil-vente{
+   height:35px;
+   width: auto;
+}
+.profil-vente img{
+   height:100%;
+   width: auto;
+   border-radius: 50px;
+}
+.fa-comments-o{
+   float: right;
+   margin: 6px;
+}
+.fa-star{
+   float: right;
+   margin: 6px;
+}
+.img-abonne{
+   width:15px;
+   height: auto;
+}
+.yt-icon{
+   max-width: 100%;
+   height: auto;
+}
+article{
+   margin-bottom: 10px;
+}
+.triangle{
+   width: 0;
+   height: 0;
+   border-left:50px solid transparent;
+   border-right:50px solid transparent;
+   border-bottom:100px solid transparent;
+   background: #000;;
+}

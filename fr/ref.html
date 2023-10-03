@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link style -->
+  <!-- <link rel="stylesheet" href="../assets/css/custom.css"> -->
+  <link rel="stylesheet" href="../assets/css/cuxtom.css">
+  <link rel="stylesheet" href="../assets/css/cuxtom-notific.css">
+  <!-- link framework  -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="icon" href="../assets/images/Koiso2.png">
+  <link rel="stylesheet" href="../assets/lib/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/lib/et-line-font/et-line-font.css">
+  <link rel="stylesheet" href="../assets/lib/icons-1.8.1/font/bootstrap-icons.css" />
+  <title> | Marketplace</title>
+</head>
+
+<body class="bg-mlight">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm">
+    <a class="navbar-brand" href="acceuil.html">KOISO Marketplace</a>
+    <form class="pull-xs-right">
+      <div class="search">
+        <input type="text" class="form-control" maxlength="64" placeholder="Search" />
+        <button type="submit" class="btn btn-search btn-danger">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" title="Tout parcourir"><i class="bi bi-shop"></i><span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="notification.html" title="Notification"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="boitedereception.html" title="Boîte de Réception"><i
+                class="bi bi-inbox-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mes_achats.html" title="Mes achats"><i class="bi bi-basket-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mes_ventes.html" title="Mes ventes"><i class="bi bi-tag-fill"></i></a>
+          </li>
+        </ul>
+        <ul class="d-block m-auto">
+          <li class="bloc-profil" title="Profil">
+            <a href="mon_compte.html">
+              <img src="../assets/images/profil-pic-crop.png" alt="profil-pic" class="img-fluid img-circled">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main role="main">
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block shadow-sm bg-light sidebar collapse">
+          <div class="sidebar-sticky pt-1">
+            <ul class="nav flex-column">
+
+              <li class="nav-item mt-5 mb-1">
+
+                <span class="h4 " data-feather="home">
+                  <span class="mr-5">Marketplace </span>
+                  <i class="bi bi-gear ml-5"></i>
+                </span>
+
+                <!-- <span class="sr-only">(current)</span> -->
+
+              </li>
+
+              <li class="nav-item mt-3 ">
+                <form class="pull you_search">
+                  <span class="prod-search">
+                    <input type="search" class="form-control" placeholder="Recherchez dans Marketplace" />
+                  </span>
+                </form>
+              </li>
+              <hr class="dr p-1">
+            </ul>
+            <h6 class="sidebar-heading d-flex mt-2 h6 text-muted">
+              <span>Catégories</span>
+              <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text">
+                    <i class="bi bi-house"></i> Vente & Location immobilière
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text">
+                    <i class="bi bi-truck"></i> Véhicules
+                  </span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+        <div class="col-md-6 col-lg-9 pt-5">
+          <div class="container mt-5">
+            <div class="col-md-8 offset-md-2 bg-light pt-3 pl-3 pr-3 pb-2 shadow-sm rounded">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<!-- framework files  -->
+<script src="../assets/js/jquery.slim.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<!-- script file -->
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/album.js"></script>
+
+</html>

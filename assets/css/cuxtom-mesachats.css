@@ -1,0 +1,13 @@
+.bloc-product{
+   height:123px;
+   width: auto;
+}
+.bloc-product img{
+   height:100%;
+   width: auto;
+}
+.img-circle{
+   width: 60px;
+   height: auto;
+   border-radius: 50px;
+}

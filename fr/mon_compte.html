@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link style -->
+  <!-- <link rel="stylesheet" href="../assets/css/custom.css"> -->
+  <link rel="stylesheet" href="../assets/css/cuxtom.css">
+  <link rel="stylesheet" href="../assets/css/cuxtom-profil.css">
+  <link rel="stylesheet" href="../assets/css/form.css">
+  <!-- link framework  -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <!-- icons -->
+  <link rel="icon" href="../assets/images/Koiso2.png">
+  <link rel="stylesheet" href="../assets/lib/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/lib/et-line-font/et-line-font.css">
+  <link rel="stylesheet" href="../assets/lib/icons-1.8.1/font/bootstrap-icons.css" />
+  <title>Profil | Marketplace</title>
+</head>
+
+<body class="bg-mlight">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm">
+    <a class="navbar-brand" href="acceuil.html">KOISO Marketplace</a>
+    <form class="pull-xs-right">
+      <div class="search">
+        <input type="text" class="form-control" maxlength="64" placeholder="Search" />
+        <button type="submit" class="btn btn-search btn-danger">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="acceuil.html" title="Tout parcourir"><i class="bi bi-shop"></i><span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="notification.html" title="Notification"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="boitedereception.html" title="Boîte de Réception"><i
+                class="bi bi-inbox-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mes_achats.html" title="Mes achats"><i class="bi bi-basket-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mes_ventes.html" title="Mes ventes"><i class="bi bi-tag-fill"></i></a>
+          </li>
+        </ul>
+        <ul class="d-block m-auto">
+          <li class="bloc-profil active-profil" title="Profil">
+            <a href="mon_compte.html">
+              <img src="../assets/images/profil-pic-crop.png" alt="profil-pic" class="img-fluid img-circled">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main role="main">
+    <!-- partie presantation -->
+    <div class="container-fluid bg-light shadow-sm pt-5">
+      <div class="row mt-4">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="cover">
+            <div class="image-cover rounded"></div>
+          </div>
+          <div class="profil-name">
+            <img src="../assets/images/profil-pic-crop.png" class="img-fluid img-profil ml-3" alt="profil-pic">
+            <span class="name">
+              <b>Arakaza Béni Trésor</b>
+              <button class="btn btn-sm btn-primary ml-3"><i class="fa fa-pencil mr-2"></i>Modifier le profil</button>
+            </span>
+          </div>
+          <div class="border-top mt-3 pt-2 menu-tabx">
+            <ul class="nav nav-fill nav-pills" role="tablist">
+              <li class="nav-item small m-1">
+                <a href="#publication" class="nav-link p-2 active" data-toggle="tab" role="tab"><b>Publications</b></a>
+              </li>
+              <li class="nav-item small m-1">
+                <a href="#photos" class="nav-link p-2" data-toggle="tab" role="tab"><b>Photos</b></a>
+              </li>
+              <li class="nav-item small m-1">
+                <a href="#videos" class="nav-link p-2" data-toggle="tab" role="tab"><b>Vidéos</b></a>
+              </li>
+              <li class="nav-item small m-1">
+                <a href="#apropos" class="nav-link p-2" data-toggle="tab" role="tab"><b>À propos</b></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- partie info -->
+    <div class="tab-content">
+      <!--  tab-pane 1 -->
+      <div class="container mt-2 mb-2 tab-pane active" id="publication" role="tabpanel">
+        <div class="row info-division">
+          <div class="col-md-4 offset-md-1 col-sm-12 mb-3">
+            <div class="p-3 bg-light mb-3 shadow-sm rounded">
+              <h5><b>Intro</b></h5>
+              <button class="btn btn-block btn-ajouter btn-sm mb-4"><b>Ajouter du contenu à la une</b></button>
+              <button class="btn btn-block btn-ajouter btn-sm"><b>Modifier les infos</b></button>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <figure class="bg-light pt-2 shadow-sm rounded">
+              <fighearder class="ml-3 ">
+                <img src="../assets/images/profil-pic-crop.png" class="img-fluid mb-2 user-img-circled"
+                  alt="user-profil">
+                <span class="identification">
+                  <b class="ml-2 mr-2 user-name">Arakaza Béni Trésor</b>
+                  <span class="text-muted small publication-time">23 avril 2022</span>
+                </span>
+                <a href="#" class="threedots-more" title="More" data-target="#more" data-toggle="modal">
+                  <i class="bi bi-three-dots mt-1 mr-2"></i>
+                </a>
+                <div class="modal modal-more mt-3" id="more">
+                  <div class="modal-dialoge d-block m-auto">
+                    <div class="modal-content bg-light p-4">
+                      <form class="form">
+                        <div class="text-center mb-3 border-bottom">
+                          <i class="bi bi-folder-fill text-primary"></i>
+                          <p class="h5 mb-3 font-weight-normal text-dark">Recevoir le dossier complet</p>
+                        </div>
+                        <div class="form-label-group">
+                          <input type="text" id="nom" class="form-control" placeholder="Nom" required autofocus>
+                          <label for="nom"> Nom </label>
+                        </div>
+                        <div class="form-label-group">
+                          <input type="text" id="prenom" class="form-control" placeholder="Prénom" required>
+                          <label for="prenom"> Prénom </label>
+                        </div>
+                        <div class="form-label-group">
+                          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                          <label for="inputEmail"> Adresse Email</label>
+                        </div>
+                        <div class="form-label-group">
+                          <select class="custom-select d-block w-100" id="pays" required>
+                            <option>Pays</option>
+                            <option>Burundi</option>
+                            <option>Ouganda</option>
+                            <option>R.D.C</option>
+                            <option>Rwanda</option>
+                            <option>Tanzanie</option>
+                          </select>
+                          <label for="genre" class="sr-only">Pays</label>
+                        </div>
+                        <div class="form-label-group">
+                          <input type="text" id="inputtelephone" class="form-control p-2" placeholder="Téléphone"
+                            required>
+                          <label for="inputtelephone">Téléphone</label>
+                        </div>
+                        <div class="border pt-3 pl-3 pr-0">
+                          <p class="text-muted">
+                            Je vous remercie de m'envoyer un dossier complet cencernant le bien présenté sur l'annonce
+                            N° 6588287.
+                          </p>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block btn-sm mt-3" type="submit">Envoyer</button>
+                        <p class="mt-2">* <a href="#" class=" small">Consulter notre politique de confidentialité.</a>
+                        </p>
+                        <p class="mt-4 mb-2 text-muted text-right">&copy; 2020-2022, Designed and Developed by Rizzova
+                          Systems.</p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </fighearder>
+              <figcaption class="image-post">
+                <div class="article-carousel">
+                  <div class="carousel slider" id="slider1" data-ride="carousel">
+                    <div class="carousel-inner " role="listbox">
+                      <div class="carousel-item active">
+                        <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i class="bi bi-image"></i>
+                        </div>
+                        <img style="width:100%; height:100%;" src="../assets/images/photo1.jpg"
+                          class="d-block img-fluid" alt="First Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i class="bi bi-image"></i>
+                        </div>
+                        <img style="width:100%; height:100%;" src="../assets/images/photo2.jpg"
+                          class="d-block img-fluid" alt="Second Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i class="bi bi-image"></i>
+                        </div>
+                        <img style="width:100%; height:100%;" src="../assets/images/photo3.jpg"
+                          class="d-block img-fluid" alt="thrid Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i class="bi bi-image"></i>
+                        </div>
+                        <img style="width:100%; height:100%;" src="../assets/images/photo4.jpg"
+                          class="d-block img-fluid" alt="Fourth Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i class="bi bi-image"></i>
+                        </div>
+                        <img style="width:100%; height:100%;" src="../assets/images/photo5.jpg"
+                          class="d-block img-fluid" alt="Fith Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i class="bi bi-image"></i>
+                        </div>
+                        <img style="width:100%; height:100%;" src="../assets/images/photo6.jpg"
+                          class="d-block img-fluid" alt="Sixth Slide">
+                      </div>
+                    </div>
+                    <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#slider1" class="carousel-control-next" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+                </div>
+              </figcaption>
+              <figfooter>
+                <div class="bloc-compter p-2">
+                  <span class="likes-viewer text-muted small"><i class="bi bi-suit-heart "></i> 23,8 K</span>
+                  <div class="stats">
+                    <span class="likes-viewer text-muted small">13 K partages</span>
+                  </div>
+                </div>
+                <div class="bloc-button d-bloc m-auto p-2 border-top ">
+                  <button class="btn btn-like btn-danger btn-sm ml-4" title="J'aime"><i
+                      class="fa fa-heart"></i></button>
+                  <div class="btns">
+                    <button class="btn btn-share btn-outline-success btn-sm ml-5 " title="Message"><i
+                        class="fa fa-envelope-o"></i></button>
+                    <button class="btn btn-share btn-outline-primary btn-sm ml-5 " title="Partage"><i
+                        class="fa fa-share"></i></button>
+                  </div>
+                </div>
+              </figfooter>
+            </figure>
+            <p>
+              <a href="se_connecter.html" class="btn btn-info btn-sm">Se connecter</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  tab-pane 2 -->
+      <div class="container mt-2 mb-2 tab-pane" id="photos" role="tabpanel">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 col-sm-12 p-5 bg-light"></div>
+        </div>
+      </div>
+      <!--  tab-pane 3 -->
+      <div class="container mt-2 mb-2 tab-pane" id="videos" role="tabpanel">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 col-sm-12 p-5 bg-light"></div>
+        </div>
+      </div>
+      <!--  tab-pane 4 -->
+      <div class="container mt-2 mb-2 tab-pane" id="apropos" role="tabpanel">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 col-sm-12 p-5 bg-light"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<!-- framework files  -->
+<script src="../assets/js/jquery.slim.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<!-- script file -->
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/album.js"></script>
+<script src="../assets/js/form-validation.js"></script>
+
+</html>

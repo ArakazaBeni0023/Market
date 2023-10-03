@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link style -->
+  <!-- <link rel="stylesheet" href="../assets/css/custom.css"> -->
+  <link rel="stylesheet" href="../assets/css/cuxtom.css">
+  <link rel="stylesheet" href="../assets/css/cuxtom-vosannonces.css">
+  <!-- link framework  -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="icon" href="../assets/images/Koiso2.png">
+  <link rel="stylesheet" href="../assets/lib/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/lib/et-line-font/et-line-font.css">
+  <link rel="stylesheet" href="../assets/lib/icons-1.8.1/font/bootstrap-icons.css" />
+  <title>Vos annonces| Marketplace</title>
+</head>
+
+<body class="bg-mlight">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm">
+    <a class="navbar-brand" href="acceuil.html">KOISO Marketplace</a>
+    <form class="pull-xs-right">
+      <div class="search">
+        <input type="text" class="form-control" maxlength="64" placeholder="Search" />
+        <button type="submit" class="btn btn-search btn-danger">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="acceuil.html" title="Tout parcourir"><i class="bi bi-shop"></i><span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="notification.html" title="Notification"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="boitedereception.html" title="Boîte de Réception"><i
+                class="bi bi-inbox-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mes_achats.html" title="Mes achats"><i class="bi bi-basket-fill"></i></a>
+          </li>
+          <li class="nav-item activex">
+            <a class="nav-link" href="mes_ventes.html" title="Mes ventes"><i class="bi bi-tag-fill"></i></a>
+          </li>
+        </ul>
+        <ul class="d-block m-auto">
+          <li class="bloc-profil">
+            <a href="mon_compte.html" title="Profil">
+              <img src="../assets/images/profil-pic-crop.png" alt="profil-pic" class="img-fluid img-circled">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main role="main">
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block shadow-sm bg-light sidebar collapse">
+          <div class="sidebar-sticky pt-1">
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item mt-3">
+                <span class="h4 small" data-feather="home">
+                  <a href="../fr/acceuil.html " class="mr-5"><span class=" text-dark">Marché</span></a>
+                </span>
+              </li>
+              <li class="nav-item ">
+                <p class="h4"><b>Mes ventes</b></p>
+              </li>
+              <button class="btn btn-outline-primary btn-sm btn-block mt-3">+ Ajouter un article</button>
+            </ul>
+            <ul class="nav flex-column mb-2 border-bottom">
+              <li class="nav-item menu">
+                <a class="nav-link " href="mes_ventes.html">
+                  <span data-feather="file-text">
+                    <i class="fa fa-tachometer p-1"><span class="bg-none"><b class="small bg-none"> Tableau de bord de
+                          vendeur</b></span></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item menu activeted">
+                <a class="nav-link" href="vosannonces.html">
+                  <span data-feather="file-text">
+                    <i class="fa fa-tag p-0"><span class="bg-none"><b class="small bg-none"> Vos annonces</b></span></i>
+                  </span>
+                </a>
+              </li>
+              <button class="btn btn-outline-secondary btn-block btn-sm mb-2">Gérer les annonces</button>
+            </ul>
+            <div>
+              <span class=""><b class="text-muted">Filtres</b><a href="#" class="small effacer">Effacer</a></span>
+              <span class="d-block mt-3 p-1">
+                <div class="nav flex-column">
+                  <!-- Collapse Trier-->
+                  <span class="bg-light p-1 mb-1" data-toggle="collapse" data-target="#TriePar">Trier par
+                    <i class="bi bi-chevron-down"></i></span><br />
+                  <div class="row pl-3 collapxe-tb">
+                    <div class="collapse" id="TriePar">
+                      <label>Récommandées</label><input type="radio" class="radio"><br>
+                      <label>Prix: Les plus bas d'abord</label><input type="radio" class="radio"><br>
+                      <label>Prix: Les plus élèves d'abord</label><input type="radio" class="radio"><br>
+                      <label>Distance: Les plus proches d'abord</label><input type="radio" class="radio">
+                      <label>Distance: Les éloignées d'abord</label><input type="radio" class="radio">
+                      <label>Date de mise en vente: les plus récentes d'abord</label><input type="radio" class="radio">
+                    </div>
+                  </div>
+                  <!-- end -->
+                  <!-- Collapse Statut-->
+                  <span class="bg-light p-1 mb-1" data-toggle="collapse" data-target="#Statut">Statut
+                    <i class="bi bi-chevron-down"></i></span><br />
+                  <div class="row pl-3 collapxe-tb">
+                    <div class="collapse" id="Statut">
+                      <label>Récommandées</label><input type="radio" class="radio"><br>
+                      <label>Prix: Les plus bas d'abord</label><input type="radio" class="radio"><br>
+                      <label>Prix: Les plus élèves d'abord</label><input type="radio" class="radio"><br>
+                      <label>Distance: Les plus proches d'abord</label><input type="radio" class="radio">
+                      <label>Distance: Les éloignées d'abord</label><input type="radio" class="radio">
+                      <label>Date de mise en vente: les plus récentes d'abord</label><input type="radio" class="radio">
+                    </div>
+                  </div>
+                  <!-- end -->
+                </div>
+              </span>
+            </div>
+          </div>
+        </nav>
+        <div class="col-md-6 col-lg-9 pt-5">
+          <div class="container mt-5 block-annonces">
+            <div class="row">
+              <span class="d-block m-auto">
+                <i class="fa fa-paper-plane-o"></i>
+              </span>
+            </div>
+            <div class="row">
+              <span class="d-block m-auto">
+                <b class="text-muted d-block m-auto">Vos annonces apparaî-trons ici dès que vous commencerez à
+                  vendre.</b><br>
+                <button class="btn btn-outline-primary btn-sm d-block m-auto">+ ajouter un article</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<!-- framework files  -->
+<script src="../assets/js/jquery.slim.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/lib/src/dropdown.js"></script>
+<!-- script file -->
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/album.js"></script>
+
+</html>

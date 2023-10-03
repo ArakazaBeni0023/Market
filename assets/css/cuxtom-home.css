@@ -1,0 +1,109 @@
+/* .form-label-group .w-10{
+   width:30%;
+   height:auto;
+} */
+
+.main-slider {
+   background: rgb(255, 255, 255);
+   height: 100%;
+}
+
+.main-slider .carousel {
+   height: auto;
+   width: 100%;
+
+}
+
+.carousel-inner .carousel-item a,
+a:hover {
+   text-decoration: none;
+}
+
+.carousel-inner .partner img {
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-bottom-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+}
+
+.carousel .carousel-inner {
+   width: auto;
+   height: auto;
+}
+
+.carousel-inner .carousel-item {
+   height: 100%;
+}
+
+.active .bi-geo-alt {
+   color: #3f3f3f;
+   border-bottom: inherit;
+   background: #fff;
+   transition: none;
+}
+
+/* Card Presentation */
+.slider-pres {
+   height: 300px;
+   width: 100%;
+}
+
+.slider-pres .carousel-inner {
+   height: 300px;
+   width: 100%;
+}
+
+.card-pres-images {
+   width: 40%;
+   height: 300px;
+}
+
+.card-pres-images .carousel-item {
+   width: 100%;
+   height: 300px;
+}
+
+@media (max-width:768px) {
+   .card-pres-images {
+      width: 100%;
+      height: 300px;
+   }
+
+   .card-pres-images .carousel-item {
+      width: 100%;
+      height: 300px;
+   }
+
+   .card-pres-details {
+      margin-top: 10px
+   }
+}
+
+.numbertext i {
+   background-color: rgba(255, 255, 255, 0);
+   color: #ffffff;
+   border-bottom: inherit;
+   transition: none;
+}
+
+/* card Pres details */
+.card-pres-details .prix {
+   float: right;
+}
+
+/* Box Selection */
+.box {
+   height: auto;
+}
+
+.box .image-product {
+   width: auto;
+   height: auto;
+}
+
+.image-product .slider .carousel-inner {
+   width: auto;
+   height: 100%;
+}
+
+/* end */

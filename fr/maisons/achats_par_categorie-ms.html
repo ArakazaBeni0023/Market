@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Achats par Catégories | Marketplace</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link style -->
+  <!-- <link rel="stylesheet" href="../../assets/css/custom.css"> -->
+  <link rel="stylesheet" href="../../assets/css/cuxtom.css">
+  <link rel="stylesheet" href="../../assets/css/categories-filter.css">
+  <link rel="stylesheet" href="../../assets/css/cuxtom-achatsparcategorie.css">
+  <!-- link framework  -->
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <link rel="icon" href="../../assets/images/Koiso2.png">
+  <link rel="stylesheet" href="../../assets/lib/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="../../assets/lib/et-line-font/et-line-font.css">
+  <link rel="stylesheet" href="../../assets/lib/icons-1.8.1/font/bootstrap-icons.css" />
+</head>
+
+<body class="bg-mlight">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm">
+    <!-- Web Site NamE -->
+    <a class="navbar-brand" href="../acceuil.html">KOISO Marketplace</a>
+    <!-- Form -->
+    <form class="pull-xs-right">
+      <!-- Search DIv -->
+      <div class="search">
+        <!-- Search Input -->
+        <input type="text" class="form-control" maxlength="64" placeholder="Search" />
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-search btn-danger">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
+    <!-- Menu Bar Button  -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Menu -->
+    <div class="container">
+      <!-- nav -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- UL Menu -->
+        <ul class="navbar-nav mr-auto">
+          <!-- Nav Item -->
+          <li class="nav-item">
+            <!--  activex -->
+            <!-- Nav Link Home -->
+            <a class="nav-link" href="../acceuil.html" title="Tout parcourir"><i class="bi bi-shop"></i><span
+                class="sr-only">(current)</span></a>
+          </li>
+          <!-- Nav Item -->
+          <li class="nav-item ">
+            <!-- Nav Link Notification -->
+            <a class="nav-link" href="../notification.html" title="Notification"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <!-- Nav Item -->
+          <li class="nav-item">
+            <!-- Nav Link Boite de Reception -->
+            <a class="nav-link" href="../boitedereception.html" title="Boîte de Réception"><i
+                class="bi bi-inbox-fill"></i></a>
+          </li>
+          <!-- Nav Item -->
+          <li class="nav-item">
+            <!-- Nav Link Mes achats -->
+            <a class="nav-link" href="../mes_achats.html" title="Mes achats"><i class="bi bi-basket-fill"></i></a>
+          </li>
+          <!-- Nav Item -->
+          <li class="nav-item">
+            <!-- Nav Link Mes Ventes -->
+            <a class="nav-link" href="../mes_ventes.html" title="Mes ventes"><i class="bi bi-tag-fill"></i></a>
+          </li>
+        </ul>
+        <ul class="d-block m-auto">
+          <li class="bloc-profil" title="Profil">
+            <a href="../mon_compte.html">
+              <img src="../../assets/images/profil-pic-crop.png" alt="profil-pic" class="img-fluid img-circled">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end -->
+  <main role="main">
+    <div class="container-fluid">
+      <div class="row">
+        <!--Start Sidebar Menu -->
+        <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block shadow-sm bg-light sidebar collapse">
+          <!-- Sidebar Sticky -->
+          <div class="sidebar-sticky pt-1">
+            <!-- Sidebar Nav -->
+            <ul class="nav flex-column">
+              <!-- Nav Item -->
+              <li class="nav-item mt-3">
+                <span class="small" data-feather="home">
+                  <a href="maison.html "><span class=" text-dark">Maison</span></a> >
+                  <a href="achats_par_categorie.html"><span class=" text-dark">Achats par catégorie</span></a>
+                </span>
+              </li>
+              <!-- Nav Item -->
+              <li class="nav-item">
+                <!-- Sidebar Head -->
+                <span class="h4" data-feather="home">
+                  <!-- Title -->
+                  <span class="mr-5 marche">Marché </span>
+                  <!-- Button Settings -->
+                  <i class="bi bi-gear" data-target="#modalSettings" data-toggle="modal"></i>
+                </span>
+                <!-- Modal Sidebra Menu -->
+                <div class="modal modal-settings pb-5 mt-3" id="modalSettings">
+                  <div class="modal-container-settings bg-light d-block m-auto p-5">
+                    <div class="container-fluid">
+                      <!-- cover -->
+                      <div class="m-cover">
+                        <div class="m-image-cover">
+                          <img src="../../assets/images/profil-pic-crop.png" class="img-fluid img-profil d-block m-auto"
+                            alt="profil-pic">
+                        </div>
+                      </div>
+                      <!-- profil image -->
+                      <div class="profil-name bg-light pt-5 pb-3 pl-3 pr-3">
+                        <p class="nam h1">Arakaza Béni Trésor</p>
+                        <div class="other-btn mt-2">
+                          <button class="btn btn-sm btn-primary ml-3"><i
+                              class="bi bi-plus-square mr-2"></i>Suivre</button>
+                          <button class="btn btn-sm ml-3">Voir le profil</button>
+                          <button class="btn btn-sm ml-3">Signaler</button>
+                        </div>
+                      </div>
+                      <div class="bg-light border-top small pt-2 pl-3 pb-2">
+                        <b class="text-muted mb-1">À propos</b><br>
+                        <span class="ml-2">Habite à <b class="lieu">Bujumbura</b>,<b class="quartier">
+                            Ngagara</b></span>.
+                      </div>
+                    </div>
+                    <div class="container-fluid">
+                      <!-- partie annonce -->
+                      <div class="annonces bg-light border-top p-1">
+                        <div class="block-annonces border-bottom pr-2 pl-2">
+                          <span class="small"><b>Annonces - 10 +</b></span>
+                          <div class="row mt-3">
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class="detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation small">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md- col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class="detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation small">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md- col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-block btn-sm btn-more mt-3 mb-3"><b>Voir plus</b></button>
+                        </div>
+                        <div class="block-annonces border-bottom pr-2 pl-2">
+                          <span class="small"><b>Annonces - 10 +</b></span>
+                          <div class="row mt-3">
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class="detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation small">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md- col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class="detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation small">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md- col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+                              <div class="article-publie">
+                                <a href="#"><img src="../../assets/images/photo1.jpg" style="width:100%; height:100%;"
+                                    class="img-fluid rounded" alt="Photo Maison"></a>
+                                <div class="description-arcticle p-2">
+                                  <span class="small"><b class="price">3 123 000 Fbu</b><br><span
+                                      class=" detail-maison">chb:3,
+                                      sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-block btn-sm btn-more mt-3 mb-3"><b>Voir plus</b></button>
+                        </div>
+                      </div>
+                      <!-- <button class="close" data-dismiss="modal">&times;</button> -->
+                      <!-- <button class="btn btn-secondary" data-dismiss="modal">Close</button>  -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav Item -->
+              <li class="nav-item">
+                <!-- form -->
+                <form class="pull you_search">
+                  <!-- Span Search -->
+                  <span class="prod-search">
+                    <!-- Search Input -->
+                    <input type="search" class="form-control" placeholder="Rechercher..." />
+                  </span>
+                </form>
+              </li>
+            </ul>
+            <hr>
+            <div class="nav flex-column mb-1">
+              <!-- Collapse Trier-->
+              <span class="bg-light p-1 mb-1" data-toggle="collapse" data-target="#TriePar">Trier par
+                <i class="bi bi-chevron-down"></i></span><br />
+              <div class="row pl-3 collapxe-tb">
+                <div class="collapse" id="TriePar">
+                  <label>Récommandées</label><input type="radio" class="radio"><br>
+                  <label>Prix: Les plus bas d'abord</label><input type="radio" class="radio"><br>
+                  <label>Prix: Les plus élèves d'abord</label><input type="radio" class="radio"><br>
+                  <label>Distance: Les plus proches d'abord</label><input type="radio" class="radio">
+                  <label>Distance: Les éloignées d'abord</label><input type="radio" class="radio">
+                  <label>Date de mise en vente: les plus récentes d'abord</label><input type="radio" class="radio">
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Collapse Prix -->
+              <span class="bg-light p-1 mb-1" data-toggle="collapse" data-target="#LePrix">Prix (en Fbu)
+                <i class="bi bi-chevron-down"></i></span><br />
+              <div class="row pl-3 collapxe-tb">
+                <div class="collapse" id="LePrix">
+                  <form class="form-price">
+                    <input type="text" class="rounded border p-1 min-price" placeholder="Min."><span
+                      class="separator">à</span>
+                    <input type="text" class="rounded border p-1 max-price" placeholder="Max.">
+                  </form>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Collapse Chambres -->
+              <span class="bg-light mb-1 p-1" data-toggle="collapse" data-target="#Chambres">Chambres
+                <i class="bi bi-chevron-down"></i></span><br />
+              <div class="row pl-3 collapxe-tb">
+                <div class="collapse" id="Chambres">
+                  <label>Tous</label><input type="radio" class="radio"><br>
+                  <label>1+</label><input type="radio" class="radio"><br>
+                  <label>2+</label><input type="radio" class="radio">
+                  <label>3+</label><input type="radio" class="radio">
+                  <label>4+</label><input type="radio" class="radio">
+                  <label>5+</label><input type="radio" class="radio">
+                  <label>6+</label><input type="radio" class="radio">
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Collapse Salles de Bain -->
+              <span class="bg-light mb-1 p-1" data-toggle="collapse" data-target="#SallesBain">Salles de bain
+                <i class="bi bi-chevron-down"></i></span><br />
+              <div class="row pl-3 collapxe-tb">
+                <div class="collapse" id="SallesBain">
+                  <label>Tous</label><input type="radio" class="radio"><br>
+                  <label>1+</label><input type="radio" class="radio"><br>
+                  <label>1.5+</label><input type="radio" class="radio"><br>
+                  <label>2+</label><input type="radio" class="radio">
+                  <label>3+</label><input type="radio" class="radio">
+                  <label>4+</label><input type="radio" class="radio">
+                  <label>5+</label><input type="radio" class="radio">
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Collapse Salles de Bain -->
+              <span class="bg-light mb-1 p-1" data-toggle="collapse" data-target="#TypeLocation">Type de location
+                <i class="bi bi-chevron-down"></i></span><br />
+              <div class="row pl-3 collapxe-tb">
+                <div class="collapse" id="TypeLocation">
+                  <label>Appartement/condominium</label><input type="checkbox" class="checkbox"><br>
+                  <label>Maison</label><input type="checkbox" class="checkbox"><br>
+                  <label>Chambre simple</label><input type="checkbox" class="checkbox"><br>
+                  <label>Maison de ville</label><input type="checkbox" class="checkbox"><br>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Collapse Salles de Bain -->
+              <div class="row pl-3 collapxe-tb mt-1">
+                <p>Mètres carrés</p><br>
+                <form class="form-space">
+                  <input type="text" class="rounded border p-1 min-space" placeholder="Min."><span
+                    class="separator">à</span>
+                  <input type="text" class="rounded border p-1 max-space" placeholder="Max.">
+                </form>
+              </div>
+
+              <!-- end -->
+            </div>
+            <hr>
+            <!-- Sidebar Nav -->
+            <!-- Title -->
+            <!-- <p class="sidebar-heading d-flex">Catégories</p> -->
+            <!-- Nav Menu -->
+            <div class="nav flex-column mb-2">
+            </div>
+          </div>
+        </nav>
+        <!-- end -->
+        <!-- Main block -->
+        <div class="col-md-6 col-lg-9 pt-5">
+          <div class="container mt-5">
+            <div class="col-md-12 col-lg-12 bg-light pt-3 pl-3 pr-3 pb-3 shadow-sm rounded">
+              <h5 class="text-dark mb-2 ml-2">Acheter par catégorie</h5>
+              <div id="myBtnContainer" class=" ml-1">
+                <button class="btnx" onclick="filterSelection('tous')"> Voir
+                  Tous</button>
+                <button class="btnx" onclick="filterSelection('etages')"> Etages</button>
+                <button class="btnx" onclick="filterSelection('appartements')">
+                  Appartements</button>
+                <button class="btnx" onclick="filterSelection('maisons')"> Maison</button>
+                <button class="btnx" onclick="filterSelection('chambrettes')">
+                  Chambrettes</button>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-12 pt-3 pl-3 pr-3 pb-2">
+              <div class="row ">
+                <!-- Row 1 -->
+                <div class="filterArticle etages col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                  <div class="box">
+                    <div class="image-product">
+                      <div class="carousel slider" id="slider1" data-ride="carousel">
+                        <div class="carousel-inner " role="listbox">
+                          <div class="carousel-item active">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo1.jpg"
+                              class="d-block img-fluid" alt="First Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo2.jpg"
+                              class="d-block img-fluid" alt="Second Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo3.jpg"
+                              class="d-block img-fluid" alt="thrid Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo4.jpg"
+                              class="d-block img-fluid" alt="Fourth Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo5.jpg"
+                              class="d-block img-fluid" alt="Fith Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo6.jpg"
+                              class="d-block img-fluid" alt="Sixth Slide">
+                          </div>
+                        </div>
+                        <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider1" class="carousel-control-next" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <p class="pl-2">
+                        <span class="small"><b class="price">3 123 000 Fbu</b><br><span class=" detail-maison">chb:3,
+                            sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                        <a href="maison.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterArticle maisons col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                  <div class="box">
+                    <div class="image-product">
+                      <div class="carousel slider" id="slider2" data-ride="carousel">
+                        <div class="carousel-inner " role="listbox">
+                          <div class="carousel-item active">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo1.jpg"
+                              class="d-block img-fluid" alt="First Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo2.jpg"
+                              class="d-block img-fluid" alt="Second Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo3.jpg"
+                              class="d-block img-fluid" alt="thrid Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo4.jpg"
+                              class="d-block img-fluid" alt="Fourth Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo5.jpg"
+                              class="d-block img-fluid" alt="Fith Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo6.jpg"
+                              class="d-block img-fluid" alt="Sixth Slide">
+                          </div>
+                        </div>
+                        <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider2" class="carousel-control-next" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <p class="pl-2">
+                        <span class="small"><b class="price">3 123 000 Fbu</b><br><span class=" detail-maison">chb:3,
+                            sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                        <a href="maison.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterArticle appartements col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                  <div class="box">
+                    <div class="image-product">
+                      <div class="carousel slider" id="slider3" data-ride="carousel">
+                        <div class="carousel-inner " role="listbox">
+                          <div class="carousel-item active">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo1.jpg"
+                              class="d-block img-fluid" alt="First Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo2.jpg"
+                              class="d-block img-fluid" alt="Second Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo3.jpg"
+                              class="d-block img-fluid" alt="thrid Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo4.jpg"
+                              class="d-block img-fluid" alt="Fourth Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo5.jpg"
+                              class="d-block img-fluid" alt="Fith Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo6.jpg"
+                              class="d-block img-fluid" alt="Sixth Slide">
+                          </div>
+                        </div>
+                        <a href="#slider3" class="carousel-control-prev" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider3" class="carousel-control-next" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <p class="pl-2">
+                        <span class="small"><b class="price">3 123 000 Fbu</b><br><span class=" detail-maison">chb:3,
+                            sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                        <a href="maison.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterArticle chambrettes col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                  <div class="box">
+                    <div class="image-product">
+                      <div class="carousel slider" id="slider4" data-ride="carousel">
+                        <div class="carousel-inner " role="listbox">
+                          <div class="carousel-item active">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo1.jpg"
+                              class="d-block img-fluid" alt="First Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo2.jpg"
+                              class="d-block img-fluid" alt="Second Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo3.jpg"
+                              class="d-block img-fluid" alt="thrid Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo4.jpg"
+                              class="d-block img-fluid" alt="Fourth Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo5.jpg"
+                              class="d-block img-fluid" alt="Fith Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo6.jpg"
+                              class="d-block img-fluid" alt="Sixth Slide">
+                          </div>
+                        </div>
+                        <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider4" class="carousel-control-next" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <p class="pl-2">
+                        <span class="small"><b class="price">3 123 000 Fbu</b><br><span class=" detail-maison">chb:3,
+                            sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                        <a href="maison.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="filterArticle etages col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                  <div class="box">
+                    <div class="image-product">
+                      <div class="carousel slider" id="slider5" data-ride="carousel">
+                        <div class="carousel-inner " role="listbox">
+                          <div class="carousel-item active">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo1.jpg"
+                              class="d-block img-fluid" alt="First Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo2.jpg"
+                              class="d-block img-fluid" alt="Second Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo3.jpg"
+                              class="d-block img-fluid" alt="thrid Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo4.jpg"
+                              class="d-block img-fluid" alt="Fourth Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo5.jpg"
+                              class="d-block img-fluid" alt="Fith Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo6.jpg"
+                              class="d-block img-fluid" alt="Sixth Slide">
+                          </div>
+                        </div>
+                        <a href="#slider5" class="carousel-control-prev" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider5" class="carousel-control-next" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <p class="pl-2">
+                        <span class="small"><b class="price">3 123 000 Fbu</b><br><span class=" detail-maison">chb:3,
+                            sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                        <a href="maison.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterArticle maisons col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                  <div class="box">
+                    <div class="image-product">
+                      <div class="carousel slider" id="slider6" data-ride="carousel">
+                        <div class="carousel-inner " role="listbox">
+                          <div class="carousel-item active">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo1.jpg"
+                              class="d-block img-fluid" alt="First Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo2.jpg"
+                              class="d-block img-fluid" alt="Second Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo3.jpg"
+                              class="d-block img-fluid" alt="thrid Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo4.jpg"
+                              class="d-block img-fluid" alt="Fourth Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo5.jpg"
+                              class="d-block img-fluid" alt="Fith Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo6.jpg"
+                              class="d-block img-fluid" alt="Sixth Slide">
+                          </div>
+                        </div>
+                        <a href="#slider6" class="carousel-control-prev" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider6" class="carousel-control-next" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <p class="pl-2">
+                        <span class="small"><b class="price">3 123 000 Fbu</b><br><span class=" detail-maison">chb:3,
+                            sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                        <a href="maison.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterArticle appartements col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                  <div class="box">
+                    <div class="image-product">
+                      <div class="carousel slider" id="slider7" data-ride="carousel">
+                        <div class="carousel-inner " role="listbox">
+                          <div class="carousel-item active">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo1.jpg"
+                              class="d-block img-fluid" alt="First Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo2.jpg"
+                              class="d-block img-fluid" alt="Second Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo3.jpg"
+                              class="d-block img-fluid" alt="thrid Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo4.jpg"
+                              class="d-block img-fluid" alt="Fourth Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo5.jpg"
+                              class="d-block img-fluid" alt="Fith Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo6.jpg"
+                              class="d-block img-fluid" alt="Sixth Slide">
+                          </div>
+                        </div>
+                        <a href="#slider7" class="carousel-control-prev" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider7" class="carousel-control-next" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <p class="pl-2">
+                        <span class="small"><b class="price">3 123 000 Fbu</b><br><span class=" detail-maison">chb:3,
+                            sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                        <a href="maison.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="filterArticle chambrettes col-md-3 col-lg-3 col-sm-6 col-xs-3 mt-2">
+                  <div class="box">
+                    <div class="image-product">
+                      <div class="carousel slider" id="slider8" data-ride="carousel">
+                        <div class="carousel-inner " role="listbox">
+                          <div class="carousel-item active">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">1 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo1.jpg"
+                              class="d-block img-fluid" alt="First Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">2 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo2.jpg"
+                              class="d-block img-fluid" alt="Second Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">3 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo3.jpg"
+                              class="d-block img-fluid" alt="thrid Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">4 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo4.jpg"
+                              class="d-block img-fluid" alt="Fourth Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">5 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo5.jpg"
+                              class="d-block img-fluid" alt="Fith Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <div class="numbertext" style="max-width: 100%;height: auto;">6 / 6 <i
+                                class="bi bi-image"></i></div>
+                            <img style="width:100%; height:100%;" src="../../assets/images/photo6.jpg"
+                              class="d-block img-fluid" alt="Sixth Slide">
+                          </div>
+                        </div>
+                        <a href="#slider8" class="carousel-control-prev" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider8" class="carousel-control-next" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <p class="pl-2">
+                        <span class="small"><b class="price">3 123 000 Fbu</b><br><span class=" detail-maison">chb:3,
+                            sdb:2 </span><br><span class="localisation">Bujumbura</span></span>
+                        <a href="maison.html" class="btn btn-primary btn-sm ml-5">+ infos</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end main block -->
+    </div>
+  </main>
+</body>
+<!-- framework files  -->
+<script src="../../assets/js/jquery.slim.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<!-- script file -->
+<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/album.js"></script>
+<script src="../../assets/js/categories-filter.js"></script>
+
+</html>
